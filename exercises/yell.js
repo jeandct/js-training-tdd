@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create a `yell` function that takes a string
@@ -8,8 +8,15 @@
 
 // Your code:
 
-//* Begin of tests
-const assert = require('assert');
+const yell = (string) => {
+  return string.toUpperCase();
+};
 
-assert.fail('You must write your own tests');
+//* Begin of tests
+const assert = require("assert");
+
+assert.strictEqual(typeof yell, "function");
+assert.strict(yell("t"), "T");
+assert.strict(yell("test"), "TEST");
+assert.strict(yell("ceci est un test"), "CECI EST UN TEST");
 // End of tests */
